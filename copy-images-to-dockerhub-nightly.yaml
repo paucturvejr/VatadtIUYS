@@ -11,7 +11,6 @@ permissions:
 jobs:
   copy-images-to-dockerhub:
     if: github.repository == 'aptos-labs/aptos-core'
-    uses: ./.github/workflows/copy-images-to-dockerhub.yaml
     with:
       image_tag_prefix: nightly
     secrets: inherit
